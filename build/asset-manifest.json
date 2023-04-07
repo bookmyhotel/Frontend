@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c40a5430.chunk.css",
+    "main.js": "/static/js/main.3cb5d7ba.chunk.js",
+    "main.js.map": "/static/js/main.3cb5d7ba.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1eefd8a9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1eefd8a9.js.map",
+    "static/css/2.8cebfa1f.chunk.css": "/static/css/2.8cebfa1f.chunk.css",
+    "static/js/2.c21f9193.chunk.js": "/static/js/2.c21f9193.chunk.js",
+    "static/js/2.c21f9193.chunk.js.map": "/static/js/2.c21f9193.chunk.js.map",
+    "static/js/3.b8210ae4.chunk.js": "/static/js/3.b8210ae4.chunk.js",
+    "static/js/3.b8210ae4.chunk.js.map": "/static/js/3.b8210ae4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.8cebfa1f.chunk.css.map": "/static/css/2.8cebfa1f.chunk.css.map",
+    "static/css/main.c40a5430.chunk.css.map": "/static/css/main.c40a5430.chunk.css.map",
+    "static/js/2.c21f9193.chunk.js.LICENSE.txt": "/static/js/2.c21f9193.chunk.js.LICENSE.txt",
+    "static/media/Appartment.20648191.png": "/static/media/Appartment.20648191.png",
+    "static/media/Cabins.a49c12c4.png": "/static/media/Cabins.a49c12c4.png",
+    "static/media/Cottages.5188a1bd.png": "/static/media/Cottages.5188a1bd.png",
+    "static/media/Guesthomes.83774257.png": "/static/media/Guesthomes.83774257.png",
+    "static/media/Holidayhomes.9a925fa2.png": "/static/media/Holidayhomes.9a925fa2.png",
+    "static/media/Hotels.e23ee99d.png": "/static/media/Hotels.e23ee99d.png",
+    "static/media/Resort.b3c422b9.png": "/static/media/Resort.b3c422b9.png",
+    "static/media/Serviced_appartment.622b24d8.png": "/static/media/Serviced_appartment.622b24d8.png",
+    "static/media/Villas.afa9be32.png": "/static/media/Villas.afa9be32.png",
+    "static/media/birmingam.865e8be2.png": "/static/media/birmingam.865e8be2.png",
+    "static/media/hostels.3064c86c.png": "/static/media/hostels.3064c86c.png",
+    "static/media/leeds.bfe478fa.png": "/static/media/leeds.bfe478fa.png",
+    "static/media/manchester.a21cc103.png": "/static/media/manchester.a21cc103.png",
+    "static/media/newcastle.a83bdb18.png": "/static/media/newcastle.a83bdb18.png",
+    "static/media/reading.06713538.png": "/static/media/reading.06713538.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1eefd8a9.js",
+    "static/css/2.8cebfa1f.chunk.css",
+    "static/js/2.c21f9193.chunk.js",
+    "static/css/main.c40a5430.chunk.css",
+    "static/js/main.3cb5d7ba.chunk.js"
+  ]
+}
