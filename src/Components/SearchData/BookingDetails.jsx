@@ -4,12 +4,11 @@ import { User } from "../UserData/UserData.jsx";
 
 
 
-export const BookingDetails = ({ hotelImage, hotelName, hotelCity, checkinDate, checkoutDate}) => {
+export const BookingDetails = ({ hotelImage, hotelName, hotelCity, checkinDate, checkoutDate, price}) => {
   const [user, setuser] = useState(null);
   
   useEffect(() => {
     setuser(User());
-    console.log(user);
   }, [])
   return (
     <div className={styles.maindiv}>
@@ -52,12 +51,18 @@ export const BookingDetails = ({ hotelImage, hotelName, hotelCity, checkinDate, 
                 marginBottom: "0",
               }}
             >
+              <span style={{fontSize:"20px", fontWeight:"bolder"}}>Price - <span style={{color:"#0071C2", fontWeight:"bold", fontSize:"20px;"
+              }}> £ {price}</span></span><br />
+
               Check-in - <span  style={{color:"green", fontWeight:"bold"
-              }}>{checkinDate}</span> <br />
+              }}>{checkinDate.replace("T", " ")}</span> <br />
              
              Check-out - <span style={{color:"green", fontWeight:"bold"
-              }}> {checkoutDate}</span>
+              }}> {checkoutDate.replace("T", " ")}</span>
+              <br />
             </p>
+          
+            
         </div>
       </div>
       <div>

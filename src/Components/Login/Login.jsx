@@ -28,6 +28,10 @@ const Login = () => {
 
 
   const handleLogin = async (event) => {
+    if (!email || !password) {
+      alert("Please fill details properly!!");
+      return;
+    }
     const payload = {
       email,
       password
@@ -38,7 +42,11 @@ const Login = () => {
       const result = res.data;
       localStorage.setItem("login", JSON.stringify(result));
       setLoader(false);
-      history.push("/");
+      if (history && history.length) {
+        history.goBack();
+      }else{
+        history.push("/");
+      }
       alert("Succesfully logged in")
     } catch (error) {
       console.log(error);

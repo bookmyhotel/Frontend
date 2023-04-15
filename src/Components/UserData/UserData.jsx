@@ -8,6 +8,5 @@ export const User = ()=>{
 
         }
     }
-    console.log(user, "user");
     return user
 }

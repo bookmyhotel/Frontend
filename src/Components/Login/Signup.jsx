@@ -27,6 +27,10 @@ const SignUp = () => {
   }
 
   const handleRegister =async(e)=>{
+    if (!email || !password) {
+      alert("Please fill details properly!!");
+      return;
+    }
     const payload ={
       email,
       password
@@ -37,7 +41,11 @@ const SignUp = () => {
       const result = res.data;
       localStorage.setItem("login", JSON.stringify(result));
       setLoader(false);
-      history.push("/");
+      if (history && history.length) {
+        history.goBack();
+      }else{
+        history.push("/");
+      }
       alert("Succesfully created account!!")
     } catch (error) {
       console.log(error);

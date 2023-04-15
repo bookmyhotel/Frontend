@@ -34,7 +34,6 @@ export const HotelDetails = () => {
      setLoader(true);
      let res = await getHotel(param.id);
      console.clear();
-     console.log(res);
      setHotel(res);
      setLoader(false);
     }

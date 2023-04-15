@@ -20,7 +20,6 @@ export const SearchPage = () => {
        setLoader(true);
        let res = await AllHotelData();
         setInitialHoteldata(res.result);
-        console.log(res.result);
         setLoader(false);
         setShowData(res.result)
         return res;

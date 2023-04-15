@@ -18,7 +18,6 @@ export const AllHotels = () => {
         setLoader(false);
         setShowData(res.result)
         console.clear();
-        console.log(res.result);
         return res;
     }
     const handleHotelDelete = () => {

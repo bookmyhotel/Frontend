@@ -8,6 +8,7 @@ import { SearchPage } from "../Components/SearchPage/SearchPage"
 import { Home } from "./Home"
 import { AllHotels } from "../Components/Hotels/AllHotel"
 import { Booking } from "../Components/Booking/Booking"
+import { Reports } from "../Components/Booking/Reports"
 
 export const Routes = () => {
 
@@ -34,6 +35,10 @@ export const Routes = () => {
 
             <Route exact path="/allhotels">
                 <AllHotels />
+            </Route>
+
+            <Route exact path="/reports">
+                <Reports />
             </Route>
 
             <Route path="/edit/:id">

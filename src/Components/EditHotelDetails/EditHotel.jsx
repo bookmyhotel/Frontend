@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Navbar } from '../Navbar/Navbar'
 import FooterBlue from '../Footer/FooterBlue'
 import { useParams } from 'react-router'
+import { useHistory } from 'react-router-dom'
 import { HotelData, getHotel } from '../../Utils/HotelData'
 import { useState, useEffect } from 'react'
 import { EditHotelDetails } from './EditHotelDetails'
@@ -20,6 +21,7 @@ margin:0 ;
 export const EditHotel = () => {
     const [loader, setLoader] = useState(false);
     const [hotel, setHotel] = useState();
+    const history = useHistory();
     const dummyHotel = {
         name: null,
         city: null,
@@ -27,16 +29,19 @@ export const EditHotel = () => {
         price: null,
         bedSize: null,
         discount: null,
-        breakFast: null,
+        SWIMMING_POOL: true,
+        WIFI: true,
+        BREAKFAST: true,
         availability: true,
         cancelationPolicy: null,
-        cancellation: null,
+        CANCELLATION: true,
         distance: null,
         id: 'new',
         rating: null,
         reviews: null,
         url: null,
         view: null,
+        images:[],
         imageList: []
     }
     const param = useParams()
@@ -46,6 +51,17 @@ export const EditHotel = () => {
         } else {
             setLoader(true);
             let res = await getHotel(param.id);
+            if (res.rooms) {
+                res.price = res.rooms[0].price;
+                res.discount = res.rooms[0].discount;
+                res.rooms = res.rooms.length;
+            }
+            if (res.facilities) {
+                res.SWIMMING_POOL = res.facilities[0].status;
+                res.WIFI = res.facilities[1].status;
+                res.CANCELLATION = res.facilities[2].status;
+                res.BREAKFAST = res.facilities[3].status;
+            }
             setHotel(res);
             setLoader(false);
         }

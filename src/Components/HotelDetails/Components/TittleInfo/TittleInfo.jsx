@@ -289,7 +289,7 @@ export const TitleInfo = (props) => {
                 props.images.map((el, index)=>{
                     if(index < 2){
                        return <ShortImage style={{ gridArea: `short${index+1}` }}>
-                       <img src={`${el}`} alt="check" />
+                       <img src={`${el.imageUrl}`} alt="check" />
                       </ShortImage>
                     }
                 })
@@ -298,7 +298,7 @@ export const TitleInfo = (props) => {
                 props.images.map((el, index)=>{
                     if(index == 3){
                         return <LargeImage style={{ gridArea: "long" }}>
-                        <img src={`${el}`} alt="check" />
+                        <img src={`${el.imageUrl}`} alt="check" />
                       </LargeImage>
                     }
                 })
