@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { reserveRoom } from '../../../../Utils/HotelData'
 import { useHistory } from 'react-router-dom'
 import { ProgressBar } from 'react-loader-spinner'
+import { Facilities } from './Facilities'
 const Div = styled.div`
 width:100%;
 margin-bottom:20px;
@@ -236,6 +237,7 @@ export const Availability = ({hotel}) => {
                             <option value="4">4 </option>
                         </select>
                     </DataDiv>
+                    <Facilities hotelData={hotel}></Facilities>
                     <Button onClick={handleClick}>
                         {
                           "Reserve"
