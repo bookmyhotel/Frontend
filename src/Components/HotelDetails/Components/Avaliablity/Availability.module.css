@@ -232,7 +232,7 @@
     margin: auto;
     width: 100%;
  }
- h5{
+ .Form  > h5{
     background-color: #d3dce32d;
     width: 200px;
     padding: 10px;

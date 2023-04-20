@@ -91,10 +91,10 @@ const DataComponent = ({ url, id,  price, name, city, facilities, review, rating
             marginTop: "6px",
           }}
         >
-          You can cancel later, so lock in this great price today!
+          
         </p>
         <h5 style={{ color: "brown", padding: "0", marginTop: "2px" }}>
-          Only {availableRooms} rooms left at this price on our site
+          Only { Math.floor(Math.random() * 10)} rooms left at this price on our site
         </h5>
       </div>
       <div>

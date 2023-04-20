@@ -57,7 +57,7 @@ export const AllHotels = () => {
                             rating={e.rating}
                             breakFast={e.breakFast}
                             availability={e.availability}
-                            availableRooms={e.availableRooms}
+                            availableRooms={e.rooms.beds}
                             price={e.rooms.price}
                             discount={(Number(e.rooms.price) - Number(e.rooms.discount) * Number(e.rooms.price) / 100)}
                             id={e.id}
